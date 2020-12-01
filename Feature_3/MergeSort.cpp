@@ -7,8 +7,7 @@ MergeSort::MergeSort(int array[], int num)
  
     merge_sort(array, 0, num - 1);
     cout << "Sorted array\n";
-    
-    outputArray = array;
+
 }
 
 MergeSort::~MergeSort()
@@ -64,7 +63,3 @@ void MergeSort::merge(int* arr, int low, int high, int mid)
 // read input array and call mergesort
 
 
-
-int MergeSort::getoutputarray(int i) {
-    return outputArray[i];
-}

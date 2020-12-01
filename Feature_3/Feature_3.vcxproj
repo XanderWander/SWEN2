@@ -19,10 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="HeapSort.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MergeSort.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="HeapSort.h" />
     <ClInclude Include="MergeSort.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
