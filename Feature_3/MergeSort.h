@@ -6,7 +6,8 @@ public:
 	~MergeSort();
 	void merge_sort(int* arr, int low, int high);
 	void merge(int* arr, int low, int high, int mid);
+	int getoutputarray(int );
 private:
-
+	int* outputArray;
 };
 

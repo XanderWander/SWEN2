@@ -11,5 +11,12 @@ int main() {
         cin >> myarray[i];
     }
 	MergeSort sort(myarray,num);
+    for (int i = 0; i < num; i++)
+    {
+        cout << sort.getoutputarray(i) << "\t";
+    }
+
+
+
 	return 0; 
 }
