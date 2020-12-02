@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-
 	Sorting sort;
 	sort.getArray();
 	sort.selectSort();

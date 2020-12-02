@@ -1,5 +1,8 @@
 #include "Sorting.h"
 
+#include "HeapSort.h"
+#include "MergeSort.h"
+
 #include <string>
 #include <iostream>
 #include <sstream>
@@ -90,7 +93,7 @@ void Sorting::selectSort()
 {
 	string sortType;
 
-	cout << "How do you want to sort the array's\n For the Bubblesort algorithm type b for the merge and heap method type m :\n";
+	cout << "How do you want to sort the array's\n For the Bubblesort algorithm type b for the merge type m and for heap type h :\n";
 	getline(cin, sortType);
 
 	if ( sortType == "b" )
@@ -99,7 +102,11 @@ void Sorting::selectSort()
 	}
 	if ( sortType == "m" )
 	{
-
+		mergeSort();
+	}
+	if (sortType == "h")
+	{
+		heapSort();
 	}
 }
 
@@ -150,3 +157,15 @@ void Sorting::bubbleSort()
 		printArray( 2 );
 	}
 }
+
+void Sorting::mergeSort()
+{
+	MergeSort sort(numberArray, amount);  
+	
+}
+
+void Sorting::heapSort()
+{
+	HeapSort sort2(numberArray, amount);
+}
+

@@ -23,6 +23,8 @@ public:
 	void printArray( int print );
 	void selectSort();
 	void bubbleSort();
+	void heapSort();
+	void mergeSort();
 	
 
 
