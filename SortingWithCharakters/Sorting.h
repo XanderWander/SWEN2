@@ -25,8 +25,6 @@ public:
 	void bubbleSort();
 	void heapSort();
 	void mergeSort();
-	
-
 
 };
 

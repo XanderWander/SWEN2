@@ -22,7 +22,7 @@ void Sorting::selectArray()
 {
 	int returnValue = 0;
 
-	cout << "Do you want to sort letters or numbers?\n Type c for Charakters and n for numbers : ";
+	cout << "Do you want to sort letters or numbers?\n Type c for charakters and n for numbers : ";
 	getline(cin, status);
 
 }
@@ -56,7 +56,7 @@ void Sorting::getArray()
 
 		if (status == "c")
 		{
-			cout << "charakter " << i << ":";
+			cout << "charakter " << i+1 << ":";
 			getline(cin, str);
 			string strConverter(str);
 			charArray[i] = strConverter[0];
@@ -102,11 +102,25 @@ void Sorting::selectSort()
 	}
 	if ( sortType == "m" )
 	{
-		mergeSort();
+		if (status == "n")
+		{
+			mergeSort();
+		}
+		else
+		{
+			cout << "Comming next release ;)\n\n\n\n";
+		}
 	}
 	if (sortType == "h")
 	{
-		heapSort();
+		if (status == "n")
+		{
+			heapSort();
+		}
+		else
+		{
+			cout << "Comming next release ;)\n\n\n\n";
+		}
 	}
 }
 
